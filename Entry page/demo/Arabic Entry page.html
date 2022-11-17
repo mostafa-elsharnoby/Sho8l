@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="http://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style2.css">
+
+    <title>countdown Page</title>
+</head>
+
+
+<body>
+    <div class="ArabicButton">
+        <a href="English Entry page.html"> <button>
+                <ion-icon name="swap-horizontal-outline"></ion-icon>
+                English
+            </button></a>
+
+    </div>
+    <img src="img/logo.png" class="logo">
+    <h1>...شغل.كوم سيأتي قريبا</h1>
+    <div class="flex-parent jc-center">
+        <form
+            action="https://docs.google.com/forms/d/e/1FAIpQLScfCsfZ0td9trVBPei2gTWWswiV4peKJrstJ_PevehDb0d1ZA/viewform?usp=sf_link">
+            <button type="submit" class="green margin-right">
+                <ion-icon name="pencil-outline"></ion-icon>
+                سجل كباحث عن عمل
+            </button>
+        </form>
+        <form
+            action="https://docs.google.com/forms/d/e/1FAIpQLScX8Ssb-GL2MgeQWdVY4Ca-6EfNTIRndt2QM9ZriyjpAtGlwg/viewform?usp=sf_link">
+            <button type="submit">
+                <ion-icon name="pencil-outline"></ion-icon>
+                سجل كصاحب عمل
+            </button>
+        </form>
+    </div>
+    <div class="learnmore">
+        <button>
+            <ion-icon name="play-back"></ion-icon>
+            اعرف اكثر
+        </button>
+    </div>
+    <div class="countdown countdown-container container">
+        <div class="clock row">
+            <div class="clock-item clock-days countdown-time-value col-sm-6 col-md-3">
+                <div class="wrap">
+                    <div class="inner">
+                        <div id="canvas-days" class="clock-canvas"></div>
+
+                        <div class="text">
+                            <p class="val">0</p>
+                            <p class="type-days type-time">DAYS</p>
+                        </div><!-- /.text -->
+                    </div><!-- /.inner -->
+                </div><!-- /.wrap -->
+            </div><!-- /.clock-item -->
+
+            <div class="clock-item clock-hours countdown-time-value col-sm-6 col-md-3">
+                <div class="wrap">
+                    <div class="inner">
+                        <div id="canvas-hours" class="clock-canvas"></div>
+
+                        <div class="text">
+                            <p class="val">0</p>
+                            <p class="type-hours type-time">HOURS</p>
+                        </div><!-- /.text -->
+                    </div><!-- /.inner -->
+                </div><!-- /.wrap -->
+            </div><!-- /.clock-item -->
+
+            <div class="clock-item clock-minutes countdown-time-value col-sm-6 col-md-3">
+                <div class="wrap">
+                    <div class="inner">
+                        <div id="canvas-minutes" class="clock-canvas"></div>
+
+                        <div class="text">
+                            <p class="val">0</p>
+                            <p class="type-minutes type-time">MINUTES</p>
+                        </div><!-- /.text -->
+                    </div><!-- /.inner -->
+                </div><!-- /.wrap -->
+            </div><!-- /.clock-item -->
+
+            <div class="clock-item clock-seconds countdown-time-value col-sm-6 col-md-3">
+                <div class="wrap">
+                    <div class="inner">
+                        <div id="canvas-seconds" class="clock-canvas"></div>
+
+                        <div class="text">
+                            <p class="val">0</p>
+                            <p class="type-seconds type-time">SECONDS</p>
+                        </div><!-- /.text -->
+                    </div><!-- /.inner -->
+                </div><!-- /.wrap -->
+            </div><!-- /.clock-item -->
+        </div><!-- /.clock -->
+    </div><!-- /.countdown-wrapper -->
+
+
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/kinetic.js"></script>
+    <script type="text/javascript" src="../jquery.final-countdown.js"></script>
+    <script type="text/javascript">
+        var countDownDate = new Date("Jan 1, 2023 00:00:00").getTime();
+        var now = new Date().getTime();
+        $('document').ready(function () {
+            'use strict';
+
+            $('.countdown').final_countdown({
+                'start': now,
+                'end': countDownDate,
+                'now': now
+            });
+        });
+
+
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+
+</html>
