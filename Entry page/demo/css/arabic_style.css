@@ -60,14 +60,14 @@ body {
 }
 
 .title {
-    padding: 0px;
+    padding: 0px 0px;
     align-items: center;
     width: 100%;
     height: 100%;
 }
 
 h1 {
-    padding: 0 0;
+    padding-left: 10%;
     margin-top: 10%;
     font-size: 600%;
     text-align: center;
@@ -97,11 +97,11 @@ button.margin-right {
 .learnmore {
     position: fixed;
     top: 170px;
-    right: 260px;
+    right: 430px;
     margin-top: 100px;
     justify-content: center;
     text-align: center;
-    margin-left: 660px;
+    margin-left: 390px;
 }
 
 button {
@@ -227,7 +227,7 @@ button:hover {
         position: fixed;
     }
     #arabic {
-        width: 60px;
+        width: 70px;
     }
     .learnmore {
         position: fixed;
@@ -236,7 +236,7 @@ button:hover {
         margin-top: 100px;
         justify-content: center;
         text-align: center;
-        margin-left: 660px;
+        margin-left: 500px;
     }
     .countdown-container {
         display: none;
@@ -312,7 +312,7 @@ button:hover {
     }
     .jc-center {
         width: 100%;
-        top: 37%;
+        top: 30%;
         right: 27%;
         position: fixed;
         justify-content: center;
@@ -330,7 +330,7 @@ button:hover {
     }
     .learnmore {
         /*position: fixed;*/
-        top: 32%;
+        top: 25%;
         right: 22%;
         /*margin-top: 100px;*/
         justify-content: center;
