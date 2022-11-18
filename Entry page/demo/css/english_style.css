@@ -1,0 +1,376 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.logo {
+    position: fixed;
+    top: 0;
+    left: 5%;
+    display: inline-block;
+    margin: 1%;
+    /* margin: 20px was off */
+    float: left;
+    height: 13%;
+    width: auto;
+    border-radius: 10%;
+    opacity: 1;
+    /*transform: scale(1, 1);*/
+}
+
+.flex-parent {
+    display: flex;
+}
+
+.jc-center {
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    margin-left: 380px;
+    height: 75px;
+}
+
+.mid {
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    top: 100px;
+    margin-top: 25rem;
+}
+
+body {
+    background-image: url('../img/background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /*height: 100%;
+    width: 100%;
+    background-color: rgba(44, 62, 80, 0.6);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    background-attachment: fixed;*/
+    font-family: 'Raleway', 'Arial', sans-serif;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 20px;
+    padding: 0 40px;
+    grid-template-areas: ". content content content content content content content content .";
+}
+
+.content {
+    grid-area: content;
+    max-width: 1400px;
+    width: 100%;
+}
+
+.title {
+    padding: 0px;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    padding: 0 0;
+    margin-top: 10%;
+    font-size: 600%;
+    text-align: center;
+    color: #fff;
+    position: fixed;
+    font-family: 'Raleway', 'Arial', sans-serif;
+    font-weight: 900;
+    text-shadow: 4px 4px rgb(199, 31, 31);
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button.margin-right {
+    margin-right: 40px;
+}
+
+.ArabicButton {
+    top: 10px;
+    right: 40px;
+    position: absolute;
+}
+
+.learnmore {
+    position: fixed;
+    top: 170px;
+    right: 260px;
+    margin-top: 100px;
+    justify-content: center;
+    text-align: center;
+    margin-left: 660px;
+}
+
+button {
+    border-radius: 12px;
+    background-color: rgb(199, 31, 31);
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0 0;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.countdown-container {
+    position: fixed;
+    top: 53%;
+    left: 8%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(10%);
+}
+
+.clock-item .inner {
+    height: 0px;
+    padding-bottom: 100%;
+    position: relative;
+    width: 100%;
+}
+
+.clock-canvas {
+    /*width: 150px;
+    height: 150px;*/
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 50%;
+    height: 0px;
+    padding-bottom: 100%;
+}
+
+.clock-item {}
+
+.text {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: -50px;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+    width: 100%;
+}
+
+.text .val {
+    font-size: 50px;
+}
+
+.text .type-time {
+    font-size: 20px;
+}
+
+
+/* Smart phones */
+
+@media screen and (min-width: 300px) and (max-width: 480px) {
+    .logo {
+        margin: 0;
+        height: 9%;
+    }
+    .text {
+        padding: 0px;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    h1 {
+        padding: 0 0;
+        margin-top: 30%;
+        right: 0px;
+        left: 10px;
+        font-size: 50px;
+        text-align: center;
+        color: #fff;
+        position: fixed;
+        font-family: 'Raleway', 'Arial', sans-serif;
+        font-weight: 900;
+        text-shadow: 4px 4px rgb(199, 31, 31);
+    }
+    button {
+        border-radius: 12px;
+        background-color: rgb(199, 31, 31);
+        border: none;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 10px;
+        margin: 10px 10px;
+        cursor: pointer;
+        font-weight: bold;
+        width: 140px;
+    }
+    #employee {
+        margin: 0 10px;
+    }
+    .flex-parent {
+        display: block;
+    }
+    .jc-center {
+        top: 270px;
+        right: 50px;
+        position: fixed;
+        justify-content: center;
+        text-align: center;
+        padding: 50px 50px;
+    }
+    .ArabicButton {
+        top: 20px;
+        right: 30px;
+        position: fixed;
+    }
+    #arabic {
+        width: 60px;
+    }
+    .learnmore {
+        position: fixed;
+        top: 300px;
+        right: 100px;
+        margin-top: 100px;
+        justify-content: center;
+        text-align: center;
+        margin-left: 660px;
+    }
+    .countdown-container {
+        display: none;
+        position: fixed;
+        top: 53%;
+        left: 8%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        transform: translateY(10%);
+    }
+    .clock-item .inner {
+        height: 0px;
+        padding-bottom: 100%;
+        position: relative;
+        width: 100%;
+    }
+    .clock-canvas {
+        /*width: 150px;
+        height: 150px;*/
+        background-color: rgba(255, 255, 255, .1);
+        border-radius: 50%;
+        height: 0px;
+        padding-bottom: 100%;
+    }
+}
+
+
+/*Tablets*/
+
+@media (min-width: 500px) and (max-width: 800px) {
+    .logo {
+        margin: 10px;
+        height: 9%;
+    }
+    .text {
+        padding: 0px;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    h1 {
+        padding: 0 0;
+        margin-top: 30%;
+        right: 0px;
+        left: 10px;
+        font-size: 50px;
+        text-align: center;
+        color: #fff;
+        position: fixed;
+        font-family: 'Raleway', 'Arial', sans-serif;
+        font-weight: 900;
+        text-shadow: 4px 4px rgb(199, 31, 31);
+    }
+    button {
+        border-radius: 12px;
+        background-color: rgb(199, 31, 31);
+        border: none;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 10px;
+        margin: 10px 10px;
+        cursor: pointer;
+        font-weight: bold;
+        width: 140px;
+    }
+    #employee {
+        top: 100px;
+        margin-right: 0px;
+    }
+    .flex-parent {
+        display: flex;
+    }
+    .jc-center {
+        width: 100%;
+        top: 270px;
+        right: 27%;
+        position: fixed;
+        justify-content: center;
+        text-align: center;
+        padding: 50px 30%;
+        margin: 0% -15%;
+    }
+    .ArabicButton {
+        top: 20px;
+        right: 30px;
+        position: fixed;
+    }
+    #arabic {
+        width: 60px;
+    }
+    .learnmore {
+        position: fixed;
+        top: 220px;
+        right: 22%;
+        margin-top: 100px;
+        justify-content: center;
+        text-align: center;
+        margin-left: 660px;
+    }
+    .countdown-container {
+        display: none;
+        position: fixed;
+        top: 53%;
+        left: 8%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        transform: translateY(10%);
+    }
+    .clock-item .inner {
+        height: 0px;
+        padding-bottom: 100%;
+        position: relative;
+        width: 100%;
+    }
+    .clock-canvas {
+        background-color: rgba(255, 255, 255, .1);
+        border-radius: 50%;
+        height: 0px;
+        padding-bottom: 100%;
+    }
+}
